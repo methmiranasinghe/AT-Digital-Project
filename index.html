@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AT Digital</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img width="100px" height="auto" src="logo.png" />
+        </div>
+        <nav class="nav">
+          <div class="nav-right">
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#home">Carrers</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="image-container">
+        <div class="rectangle">
+          <div class="text-container">
+            <div class="hero-content">
+              <h1>
+                We Crush Your <br />
+                Competitors, Goals, And Sales Records - Without <br />The B.S.
+              </h1>
+
+              <a href="#" class="btn">Get Our Consultation</a>
+            </div>
+          </div>
+        </div>
+
+        <img src="hero.png" alt="Background Image" />
+      </div>
+    </section>
+
+    <section class="services services-container">
+      <div class="service-card">
+        <img src="services-1.png" alt="Digital Strategy Consulting Service" />
+        <div class="service-content">
+          <h3 class="services-headings">Web & Mobile App Development</h3>
+          <p>
+          Your web and mobile Apps are pieces of the puzzle to grow your business. We use frameworks which tailor content and
+          engagement methods to respond to different intents shown by your potential customers who interact with your business
+          online.
+          </p>
+          <button class="learn-more-button">Learn More</button>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-content">
+          <h3 class="services-headings">Digital Strategy Consulting</h3>
+
+          <p>
+          Your digital strategy should complement the overall marketing strategy of the company. In online marketing, each
+          component will never work in isolation and every business needs a different mix. We provide a clear concept and
+          strategic overview to find the most efficient model for your business.
+          </p>
+          <button class="learn-more-button">Learn More</button>
+        </div>
+        <img src="services-2.png" alt="Web & Mobile App Development Service" />
+      </div>
+    </section>
+
+    <section class="faqs sections">
+      <div class="container faq-container">
+        <h1 class="faq-heading">Frequently asked Questions</h1>
+
+        <div class="faq-question">
+          <p class="question">
+            Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?
+          </p>
+          <p class="answer">
+        Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est
+        sed aliquam. Sapien massa morbi risus sagittis tortor integer.
+          </p>
+        </div>
+        <div class="faq-question">
+          <p class="question">
+        Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?
+          </p>
+          <p class="answer">
+        Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est
+        sed aliquam. Sapien massa morbi risus sagittis tortor integer.
+          </p>
+        </div>
+        <div class="faq-question">
+          <p class="question">
+        Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?
+          </p>
+          <p class="answer">
+        Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est
+        sed aliquam. Sapien massa morbi risus sagittis tortor integer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-section">
+        <img clas="logo-text" src="logo.png" alt="Logo" />
+        <p class="footer-p">
+          Your goal is our target. Not anything in between. We use online
+          marketing platforms and tools to achieve single objective - your
+          business results
+        </p>
+      </div>
+      <div class="footer-section">
+        <h2>Our Technologies</h2>
+        <ul>
+          <li>ReactJS</li>
+          <li>Gatsby</li>
+          <li>NextJS</li>
+          <li>NodeJS</li>
+       
+        </ul>
+        
+        <div class="footer-legal">
+            <hr class="footer-hr">
+            <p class="">Privacy Policy <span class="vertical-line"> | Terms and Conditions</span> </p>
+        </div>
+      </div>
+    
+      <div class="footer-section">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Social Media Marketing</li>
+          <li>Web and Mobile App Development</li>
+          <li>Data & Analytics</li>
+        
+        </ul>
+        
+      </div>
+    
+    </footer>
+
+     <script
+      src="http://code.jquery.com/jquery-1.11.0.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+  
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function () {
+            $(".question").append('<span class="toggle">+</span>');
+
+            $(".toggle").click(function () {
+                $(this).text(function (_, text) {
+                    return text === '+' ? '-' : '+';
+                });
+                $(this).parent().next("p").slideToggle("fast");
+            });
+        });
+    </script>
+  </body>
+</html>

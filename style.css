@@ -1,0 +1,445 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+header {
+  margin: 0;
+  background: #6b3cc9;
+  padding: 20px;
+}
+
+header div ul li a {
+  float: right;
+}
+
+.logo {
+  float: left;
+}
+
+.logo h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+/*navbar*/
+nav {
+  float: right;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/*hero section*/
+
+.hero {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.rectangle {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 320px;
+  background: linear-gradient(to bottom, #47c886 0%, #1cbddd 100%);
+ 
+}
+
+.text-container {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  z-index: 1;
+  width: 100%;
+  margin: 30px;
+  padding: 20px;
+}
+
+.hero-content {
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f28d35;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #db6805;
+}
+
+/*services section*/
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.services-headings{
+  color: #6b3cc9;
+}
+
+.services-container {
+  margin-left: 130px;
+  margin-right: 130px;
+}
+.service-card {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.service-content {
+  flex: 1;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.service-card img {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.learn-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f28d35;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.learn-more-button:hover {
+  background-color: #866500;
+}
+
+
+/* faq section*/
+
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  
+  align-items: center;
+ 
+}
+.faq-question {
+  margin-bottom: 20px;
+  background-color: #eae2ff;
+  
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  color: #000000;
+  font-weight: bold;
+}
+.faq-heading {
+  color: #6b3cc9;
+  text-align: center;
+}
+.answer {
+  padding: 0 10px;
+  display: none;
+  color: #9c9991;
+}
+
+.toggle-icon {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.active .toggle-icon {
+  transform: rotate(45deg);
+}
+
+.toggle {
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 34px;
+  color: #000000;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #6b3cc9;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+}
+
+.footer-section h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-hr {
+  width: 100%;
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+.footer-legal {
+  text-align: center;
+}
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 8px;
+}
+
+.footer p {
+  font-size: 10px;
+  margin-left: 55px;
+  text-align: le;
+}
+
+
+/*responsive */
+
+/* services */
+@media screen and (max-width: 1440px) {
+  .services-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .services-container {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-card {
+    flex: 0 0 100%;
+  }
+
+  .services-container {
+    margin: 80px;
+  }
+
+  .service-content {
+    text-align: center;
+    padding: 0;
+  }
+
+  .service-card img {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .services-container {
+    margin: 40px;
+  }
+}
+
+/*footer*/
+@media screen and (max-width: 1440px) {
+  .footer-section {
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-section {
+    margin: 6px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-section {
+    margin: 4px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer-section {
+    margin: 2px;
+  }
+}
+/* faq section*/
+@media screen and (max-width: 1440px) {
+  .faq-container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .faq-container {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faq-container {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .faq-container {
+    max-width: 300px;
+  }
+}
+
+
+/* hero section*/
+@media screen and (max-width: 1440px) {
+  .rectangle {
+    width: 400px;
+    height: 250px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .rectangle {
+    width: 350px;
+    height: 220px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rectangle {
+    width: 300px;
+    height: 190px;
+  }
+
+  .hero-content h1 {
+    font-size: 20px;
+  }
+
+  .hero-content p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .rectangle {
+    width: 250px;
+    height: 160px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+}
+/* nav bar*/
+
+@media screen and (max-width: 768px) {
+  nav {
+    float: none;
+    text-align: center;
+  }
+
+  nav ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+}
